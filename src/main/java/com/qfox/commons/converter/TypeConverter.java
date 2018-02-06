@@ -90,7 +90,7 @@ public class TypeConverter {
             } catch (ConvertException e) {
                 throw e;
             } catch (Exception e) {
-                throw new RuntimeException(e);
+                throw new ConvertException(e);
             }
         }
         return source;
